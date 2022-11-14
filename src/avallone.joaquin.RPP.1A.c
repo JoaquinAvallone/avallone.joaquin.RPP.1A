@@ -51,7 +51,7 @@ int main(void) {
 void actualizarRecuperados(ePais pais)
 {
 
-}*7
+}*/
 
 /*
  * 2. Crear una función que se llame invertirCadena que reciba una
@@ -105,10 +105,12 @@ int ordenarCaracteres(char string[])
 		{
 			for(int j= i+1; j<largo; j++)
 			{
-				if(string[i]<string[j])
-				aux = string[i];
-				string[i]= string[j];
-				string[j]=aux;
+				if(string[i]>string[j])
+				{
+					aux = string[i];
+					string[i]= string[j];
+					string[j]=aux;
+				}
 			}
 		}
 		retorno = 1;
